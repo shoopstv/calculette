@@ -13,7 +13,12 @@ const ecran = document.getElementById('ecran');
  *    - Elle accède à la propriété 'value' de l'élément 'ecran' (le texte affiché à l'écran).
  *    - Elle ajoute la 'valeur' passée en paramètre à la fin du texte existant.
  *    - Le résultat est mis à jour dans l'écran de la calculatrice.
- *
+ *    - .test() est comme un détecteur de mots. il va rechercher une séquence ou un texte / mot et vérifier si il est présent.
+ *    - .test renvois toujours un bool. 
+ *    
+ *    - .value est une propriété utilisée pour accéder à la valeur d'un élément de formulaire. 
+ *      Il peut s'agir d'un champ de texte, d'une zone de texte, d'une liste déroulante, d'une case à cocher, etc.
+ * 
  *    Exemple :
  *    Si l'écran affiche "12" et qu'on appelle ajouterAEcran("3"), l'écran affichera "123".
  */
@@ -82,7 +87,7 @@ function calculer() {
  *        Ajoute un écouteur d'événements 'mouseout' à chaque bouton.
  *        Cet écouteur est appelé lorsque la souris quitte la zone du bouton.
  *        La fonction fléchée (=>) à l'intérieur de l'écouteur rétablit la couleur de fond du bouton à '#eee' (gris clair).
- *        ATTENTION : J'ai tester d'écrire la fonction en simplifié, je garantit pas que cela fonctionne sans probleme. Meme si ca fonctionne pour le moment...
+ *        ATTENTION : J'ai tester d'écrire la fonction en simplifié ou dite fleché, je garantit pas que cela fonctionne sans probleme. Meme si ca fonctionne pour le moment...
  */
 const boutons = document.querySelectorAll('button');
 

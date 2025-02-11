@@ -8,7 +8,7 @@
 }
 
 #ecran {
-    width: 95%;
+    width: 93%;
     margin-bottom: 10px;
     padding: 10px;
     font-size: 20px;
@@ -18,9 +18,9 @@
 }
 
 .boutons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
+    display: grid; /* Active le système de grille pour l'élément conteneur */
+    grid-template-columns: repeat(4, 1fr); /* Définit la structure des colonnes de la grille, 4 colonnes de largeur égale (1fr) */
+    grid-gap: 5px;  /* Ajoute un espace entre les éléments de la grille */
 }
 
 button {
