@@ -49,10 +49,10 @@ function effacer() {
  *        ATTENTION : eval() peut être dangereux car elle exécute du code arbitraire.
  *                   Dans un contexte de production, il est préférable d'utiliser
  *                   une bibliothèque d'analyse et d'évaluation d'expressions mathématiques
- *                   plus sécurisée.
+ *                   plus sécurisée. Mais je ne sais toujours pas utilisé les bibliothèques.
  *      - Le résultat du calcul est affecté à la propriété 'value' de l'élément 'ecran',
  *        ce qui affiche le résultat à l'écran.
- *    - catch (erreur) :
+ *    - catch (erreur c'est la fonction associé a try qui gere les erreurs.) :
  *      - Si une erreur se produit pendant l'évaluation (par exemple, une division par zéro),
  *        l'erreur est capturée.
  *      - La propriété 'value' de l'élément 'ecran' est définie à "Erreur",
@@ -67,12 +67,12 @@ function calculer() {
 }
 
 /**
- * 5. Personnalisation CSS via JavaScript (exemple)
+ * 5. Personnalisation CSS via JavaScript
  *    Cette partie du code ajoute un effet visuel lorsque la souris survole les boutons.
  *
  *    Fonctionnement :
  *    - document.querySelectorAll('button') : Sélectionne tous les éléments <button> présents dans le document.
- *                                             Retourne une NodeList (semblable à un tableau) contenant tous les boutons.
+ *                                             Retourne une NodeList (semblable à un tableau mais n'est pas un array) contenant tous les boutons.
  *    - boutons.forEach(bouton => { ... }) : Parcourt chaque bouton de la NodeList.
  *      - bouton.addEventListener('mouseover', () => { ... }) :
  *        Ajoute un écouteur d'événements 'mouseover' à chaque bouton.
@@ -82,6 +82,7 @@ function calculer() {
  *        Ajoute un écouteur d'événements 'mouseout' à chaque bouton.
  *        Cet écouteur est appelé lorsque la souris quitte la zone du bouton.
  *        La fonction fléchée (=>) à l'intérieur de l'écouteur rétablit la couleur de fond du bouton à '#eee' (gris clair).
+ *        ATTENTION : J'ai tester d'écrire la fonction en simplifié, je garantit pas que cela fonctionne sans probleme. Meme si ca fonctionne pour le moment...
  */
 const boutons = document.querySelectorAll('button');
 
