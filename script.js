@@ -94,8 +94,10 @@ const boutons = document.querySelectorAll('button');
 boutons.forEach(bouton => {
     bouton.addEventListener('mouseover', () => {
         bouton.style.backgroundColor = 'lightgreen'; // Change la couleur au survol
+        bouton.style.boxShadow = "2px 2px 5px rgba(0,0,0,0.5)"; // ajoute une box shadow au survol
     });
     bouton.addEventListener('mouseout', () => {
         bouton.style.backgroundColor = '#eee'; // Revenir à la couleur d'origine
+        bouton.style.boxShadow = "";
     });
 });
