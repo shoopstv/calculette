@@ -1,3 +1,7 @@
+body{
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
 .calculatrice {
     width: 300px;
     margin: 50px auto;
@@ -5,6 +9,7 @@
     border-radius: 5px;
     padding: 10px;
     background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px #515ada;
 }
 
 #ecran {
