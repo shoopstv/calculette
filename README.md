@@ -30,6 +30,7 @@ Vous pouvez voir la calculatrice en action ici : [https://shoopstv.github.io/cal
 Use code with caution.
 Markdown
 calculette/
+
 ├── index.html # Page HTML principale
 
 ├── style.css # Fichier CSS pour le style
